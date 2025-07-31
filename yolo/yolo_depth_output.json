@@ -1,0 +1,118 @@
+[
+  {
+    "name": "Tequila",
+    "bbox": [
+      652,
+      162,
+      738,
+      413
+    ],
+    "confidence": 0.9294,
+    "distance": {
+      "x": 0.041,
+      "y": -0.0764,
+      "z": 0.953
+    }
+  },
+  {
+    "name": "Gin",
+    "bbox": [
+      721,
+      202,
+      817,
+      468
+    ],
+    "confidence": 0.9205,
+    "distance": {
+      "x": 0.109,
+      "y": -0.0243,
+      "z": 0.879
+    }
+  },
+  {
+    "name": "Tequila",
+    "bbox": [
+      538,
+      89,
+      609,
+      315
+    ],
+    "confidence": 0.871,
+    "distance": {
+      "x": -0.1023,
+      "y": -0.1964,
+      "z": 1.133
+    }
+  },
+  {
+    "name": "JOHN BARR Whiskey",
+    "bbox": [
+      873,
+      419,
+      1047,
+      716
+    ],
+    "confidence": 0.8498,
+    "distance": {
+      "x": 0.2249,
+      "y": 0.1532,
+      "z": 0.676
+    }
+  },
+  {
+    "name": "Gin",
+    "bbox": [
+      499,
+      59,
+      556,
+      275
+    ],
+    "confidence": 0.847,
+    "distance": {
+      "x": -0.1661,
+      "y": -0.25,
+      "z": 1.181
+    }
+  },
+  {
+    "name": "Wine column",
+    "bbox": [
+      261,
+      0,
+      390,
+      230
+    ],
+    "confidence": 0.4806,
+    "distance": {
+      "x": -0.4731,
+      "y": -0.3517,
+      "z": 1.309
+    }
+  },
+  {
+    "name": "XARM",
+    "bbox": [
+      0,
+      4,
+      270,
+      695
+    ],
+    "confidence": 0.4039,
+    "distance": {
+      "x": -0.4468,
+      "y": -0.0096,
+      "z": 0.785
+    }
+  }
+]
+
+
+
+""""
+
+Type:{id: 0~4
+name: "**name**"}
+
+glass: bool(True/False)
+
+wine col: bool(True/False)

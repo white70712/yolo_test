@@ -1,0 +1,31 @@
+Type[
+  {
+    "Tequila": {
+      "id": 1
+    }
+  },
+  {
+    "JOHN BARR Whiskey": {
+      "id": 2
+    }
+  },
+  {
+    "Tequila": {
+      "id": 3
+    }
+  },
+  {
+    "Gin": {
+      "id": 4
+  },
+  {
+    "glass": {
+      "exist": true
+    }
+  },
+  {
+    "wine col": {
+      "exist": true
+    }
+  }
+]

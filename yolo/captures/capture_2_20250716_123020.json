@@ -1,0 +1,22 @@
+{
+  "XARM": {
+    "distance": 0.901,
+    "confidence": 0.897
+  },
+  "Wine column": {
+    "distance": 1.087,
+    "confidence": 0.884
+  },
+  "Rum": {
+    "distance": 0.0,
+    "confidence": 0.877
+  },
+  "Tequila": {
+    "distance": 1.276,
+    "confidence": 0.715
+  },
+  "refrigerator": {
+    "distance": 1.193,
+    "confidence": 0.567
+  }
+}

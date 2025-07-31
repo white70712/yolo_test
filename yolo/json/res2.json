@@ -1,0 +1,47 @@
+{
+  "XARM": {
+    "distance": 0.659,
+    "confidence": 0.951,
+    "position": {
+      "x": 0.242,
+      "y": 0.005,
+      "z": 0.659
+    }
+  },
+  "Gin": {
+    "distance": 1.14,
+    "confidence": 0.836,
+    "position": {
+      "x": -0.244,
+      "y": 0.307,
+      "z": 1.14
+    }
+  },
+  "Wine column": {
+    "distance": 1.265,
+    "confidence": 0.748,
+    "position": {
+      "x": -0.036,
+      "y": 0.199,
+      "z": 1.265
+    }
+  },
+  "Plate": {
+    "distance": 1.205,
+    "confidence": 0.591,
+    "position": {
+      "x": 0.066,
+      "y": 0.441,
+      "z": 1.205
+    }
+  },
+  "bottle": {
+    "distance": 0.0,
+    "confidence": 0.748,
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    }
+  }
+}

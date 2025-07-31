@@ -1,0 +1,22 @@
+{
+  "XARM": {
+    "average_confidence": 0.899,
+    "counts": 3
+  },
+  "Wine column": {
+    "average_confidence": 0.887,
+    "counts": 3
+  },
+  "Rum": {
+    "average_confidence": 0.877,
+    "counts": 3
+  },
+  "Tequila": {
+    "average_confidence": 0.717,
+    "counts": 3
+  },
+  "refrigerator": {
+    "average_confidence": 0.563,
+    "counts": 3
+  }
+}

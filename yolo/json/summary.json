@@ -1,0 +1,22 @@
+{
+  "Gin": {
+    "average_confidence": 0.877,
+    "counts": 2
+  },
+  "XARM": {
+    "average_confidence": 0.93,
+    "counts": 2
+  },
+  "Wine column": {
+    "average_confidence": 0.819,
+    "counts": 2
+  },
+  "Plate": {
+    "average_confidence": 0.58,
+    "counts": 2
+  },
+  "bottle": {
+    "average_confidence": 0.666,
+    "counts": 4
+  }
+}

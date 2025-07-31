@@ -1,0 +1,37 @@
+[
+  {
+    "id_0": {
+      "name": "Gin"
+    }
+  },
+  {
+    "id_1": {
+      "name": "Tequila"
+    }
+  },
+  {
+    "id_2": {
+      "name": "JOHN BARR Whiskey"
+    }
+  },
+  {
+    "id_3": {
+      "name": "Tequila"
+    }
+  },
+  {
+    "id_4": {
+      "name": "Gin"
+    }
+  },
+  {
+    "glass": {
+      "exist": false
+    }
+  },
+  {
+    "wine col": {
+      "exist": true
+    }
+  }
+]

@@ -2,7 +2,7 @@ import os
 from PIL import Image
 import pillow_heif
 
-input_folder = r"C:\Users\user\Desktop\yolo\new xarm"
+input_folder = r"C:\Users\user\Desktop\soda"
 output_format = "jpg"  # 可改為 "png"
 
 def convert_all_heic_in_folder(folder, out_format="jpg"):

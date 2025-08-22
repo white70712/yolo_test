@@ -4,10 +4,10 @@ import numpy as np
 from ultralytics import YOLO
 import os
 import json
-CONF_THRESHOLD = 0.4
+CONF_THRESHOLD = 0.1
 
 # ------------------- YOLO 模型 -------------------
-model = YOLO('yolo_wine.pt')  # 只使用自訂模型
+model = YOLO('model/alltype_v3.pt') # 只使用自訂模型
 names = model.names
 
 # ------------------- RealSense 初始化 -------------------

@@ -2,7 +2,7 @@ import cv2
 import os
 
 video_path = 'train.mp4'
-output_dir = output_dir = r"C:\Users\user\Desktop\train_data\4"
+output_dir = output_dir = r"C:\Users\user\Desktop\train_data\All types\5"
 os.makedirs(output_dir, exist_ok=True)
 
 cap = cv2.VideoCapture(video_path)

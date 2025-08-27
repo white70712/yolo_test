@@ -7,7 +7,7 @@ import json
 CONF_THRESHOLD = 0.1
 
 # ------------------- YOLO 模型 -------------------
-model = YOLO('model/alltype_v3.pt') # 只使用自訂模型
+model = YOLO('model/alltype_v5.pt') # 只使用自訂模型
 names = model.names
 
 # ------------------- RealSense 初始化 -------------------

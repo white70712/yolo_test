@@ -7,10 +7,10 @@ import time
 from ultralytics import YOLO
 
 CONF_THRESHOLD = 0.4
-TARGET_BOTTLES = ['Gin', 'Tequila', 'JOHN BARR Whiskey', 'JOHNNIE WALKER Whiskey', 'Rum']
+TARGET_BOTTLES = ['Gin', 'Tequila', 'JOHN BARR Whiskey', 'JOHNNIE WALKER Whiskey', 'Rum', 'Jim Beam Bourbon Whisky']
 WINE_COL_NAME = 'Wine column'
 
-model = YOLO('yolo_wine.pt')
+model = YOLO('model/alltype_v7.pt')
 names = model.names
 
 def get_3d_point_from_bbox(bbox, depth_frame, intrinsics):

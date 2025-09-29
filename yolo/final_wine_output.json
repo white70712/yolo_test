@@ -1,52 +1,12 @@
 [
   {
-    "name": "Gin",
-    "z": 0.8580000400543213,
-    "Type": {
-      "id": 0,
-      "name": "Gin"
-    },
-    "glass": true,
-    "wine col": false
+    "glass": {
+      "exist": false
+    }
   },
   {
-    "name": "Tequila",
-    "z": 0.9390000700950623,
-    "Type": {
-      "id": 1,
-      "name": "Tequila"
-    },
-    "glass": true,
-    "wine col": false
-  },
-  {
-    "name": "Tequila",
-    "z": 1.1090000867843628,
-    "Type": {
-      "id": 2,
-      "name": "Tequila"
-    },
-    "glass": true,
-    "wine col": false
-  },
-  {
-    "name": "Gin",
-    "z": 1.2140001058578491,
-    "Type": {
-      "id": 3,
-      "name": "Gin"
-    },
-    "glass": true,
-    "wine col": false
-  },
-  {
-    "name": "JOHN BARR Whiskey",
-    "z": 1.0789999961853027,
-    "Type": {
-      "id": null,
-      "name": "JOHN BARR Whiskey"
-    },
-    "glass": false,
-    "wine col": false
+    "wine col": {
+      "exist": false
+    }
   }
 ]

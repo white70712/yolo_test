@@ -7,8 +7,11 @@ import json
 CONF_THRESHOLD = 0.1
 
 # ------------------- YOLO 模型 -------------------
-model = YOLO('model/alltype_v7.pt') # 只使用自訂模型
+model = YOLO('model/alltype_v6.pt') # 只使用自訂模型
 names = model.names
+
+# ✅ 設定要隱藏邊框的名稱列表
+HIDE_NAMES = ["XARM", "Plate"]
 
 # ------------------- RealSense 初始化 -------------------
 pipeline = rs.pipeline()
@@ -39,6 +42,7 @@ def get_ids_by_name(detections, target_name, top_n=1):
     if not matched:
         return None if top_n == 1 else []
     
+    # 確保 matched 已經依 z 軸排序 (在主迴圈中已排序)
     if top_n == 1:
         return matched[0]["id"]
     return [d["id"] for d in matched[:top_n]]
@@ -69,11 +73,17 @@ try:
             class_id = int(box.cls[0].item())
             conf = float(box.conf[0].item())
             name = names.get(class_id, f"class_{class_id}")
-            label = f"{name} {conf:.2f}"
-            color = (0, 255, 0)  # 綠色
-            cv2.rectangle(color_image, (x1, y1), (x2, y2), color, 2)
-            cv2.putText(color_image, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX,
-                        0.5, color, 2)
+            
+            # --- 🚀 關鍵修改區塊：判斷是否為要隱藏的名稱 ---
+            if name not in HIDE_NAMES:
+                label = f"{name} {conf:.2f}"
+                color = (0, 255, 0)  # 綠色
+                # 繪製邊框和標籤
+                cv2.rectangle(color_image, (x1, y1), (x2, y2), color, 2)
+                cv2.putText(color_image, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX,
+                            0.5, color, 2)
+            # -----------------------------------------------
+
             pos3d = get_3d_point_from_bbox([x1, y1, x2, y2], depth_frame, intrinsics)
 
             if pos3d:

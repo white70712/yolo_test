@@ -8,7 +8,11 @@ CONF_THRESHOLD = 0.1
 IOU_THRESHOLD = 0.7 # 新增：用於跨類別 NMS 的重疊度閾值
 
 # ------------------- YOLO 模型 -------------------
+<<<<<<< HEAD
 model = YOLO('model/alltype_v9.pt') # 只使用自訂模型
+=======
+model = YOLO('model/alltype_v6.pt') # 只使用自訂模型
+>>>>>>> a007e557deb58cbe940c4826cd778bea0a024190
 names = model.names
 
 # ✅ 設定要隱藏邊框的名稱列表
@@ -129,6 +133,7 @@ try:
         # 儲存偵測結果
         detections = []
 
+<<<<<<< HEAD
         # 迭代最終篩選出的候選框 (final_candidates)
         for cand in final_candidates:
             x1, y1, x2, y2 = cand["bbox"]
@@ -139,6 +144,19 @@ try:
             if name not in HIDE_NAMES:
                 label = f"{name} {conf:.2f}"
                 color = (0, 255, 0) # 綠色
+=======
+        # 先收集所有框 + 3D 座標
+        for box in boxes:
+            x1, y1, x2, y2 = map(int, box.xyxy[0].tolist())
+            class_id = int(box.cls[0].item())
+            conf = float(box.conf[0].item())
+            name = names.get(class_id, f"class_{class_id}")
+            
+            # --- 🚀 關鍵修改區塊：判斷是否為要隱藏的名稱 ---
+            if name not in HIDE_NAMES:
+                label = f"{name} {conf:.2f}"
+                color = (0, 255, 0)  # 綠色
+>>>>>>> a007e557deb58cbe940c4826cd778bea0a024190
                 # 繪製邊框和標籤
                 cv2.rectangle(color_image, (x1, y1), (x2, y2), color, 2)
                 cv2.putText(color_image, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX,
